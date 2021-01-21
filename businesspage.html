@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <title> Covid Hackathon </title>
         <link rel="stylesheet" href="./bulma/css/bulma.css">
+        <script defer src="./scripts.js"></script>
 
     </head>
     <header>
@@ -71,12 +72,7 @@
           </div>
           
 
-
-
-          This container is centered on desktop and larger viewports.
-          <div class="container is-widescreen">
-            <button class="button is-large is-fullwidth">Large</button>
-          </div>
+          
           
 
 
@@ -86,116 +82,243 @@
 
   
 
-          <div class="tile is-parent">
+        <div class="tile is-parent">
             <article class="tile is-child notification has-background-white-ter	">
               <div class="content">
-                <p class="title">Dairy</p>
+                <p class="title">Confectionery</p>
                 <p class="subtitle">With even more content</p>
                 
                 <div class="content">
+                  <div class="modal" id="1">
+                    <div class="modal-background"></div>
+                    <div class="modal-content">
+                      <!-- Any other Bulma elements you want -->
+
+                      <div class="card">
+                        <div class="card-image">
+                          <figure class="image is-4by3">
+                            <img src="https://media.istockphoto.com/photos/chocolate-bar-with-a-missing-bite-on-white-background-picture-id186682188?k=6&m=186682188&s=612x612&w=0&h=u0cutua_dNsPqVK8bV42a6cQv28llFID8G1cfcmJbOc=" alt="Placeholder image">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <div class="media">
+
+                            <div class="media-content">
+                              <p class="title is-4">Chocolate</p>
+                              <p class="subtitle is-6">£1.00</p>
+                            </div>
+                          </div>
+                      
+                          <div class="content">
+                            
+
+
+                            <div class="number-input">
+                              <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                              <input class="quantity" min="0" name="quantity" value="1" type="number">
+                              <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                            </div>
+
+
+
+
+                            <button class="button is-medium">Submit</button>
+
+
+
+                            
+
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                    </div>
+                    <button class="modal-close is-large" aria-label="close" onclick="modalDeactivate(1)"></button>
+                  </div>
+        
+        
+        
+                  
+                  <button class="button is-medium" onclick="modalActivate(1)">Chocolate</button>
 
                   <!-- Content -->
+
                 </div>
               </div>
             </article>
-          </div>
+        </div>
 
-            <div class="tile is-parent">
-              <article class="tile is-child notification is-success">
+        <div class="tile is-parent">
+              <article class="tile is-child notification has-background-white-ter">
                 <div class="content">
                   <p class="title">Veg</p>
                   <p class="subtitle">With even more content</p>
                   <div class="content">
+                    <div class="modal" id="2">
+                      <div class="modal-background"></div>
+                      <div class="modal-content">
+                        <!-- Any other Bulma elements you want -->
+                      </div>
+                      <button class="modal-close is-large" aria-label="close" onclick="modalDeactivate(2)"></button>
+                    </div>
+          
+          
+          
+                    
+                    <button class="button is-medium" onclick="modalActivate(2)">Carrot</button>
                     <!-- Content -->
                   </div>
                 </div>
               </article>
-            </div>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child notification is-success">
+        </div>
+        
+        <div class="tile is-parent">
+            <article class="tile is-child notification has-background-white-ter">
               <div class="content">
                 <p class="title">Drinks</p>
                 <p class="subtitle">With even more content</p>
                 <div class="content">
                   <!-- Content -->
+                  <div class="modal" id="3">
+                    <div class="modal-background"></div>
+                    <div class="modal-content">
+                      <!-- Any other Bulma elements you want -->
+                    </div>
+                    <button class="modal-close is-large" aria-label="close" onclick="modalDeactivate(3)"></button>
+                  </div>
+        
+        
+        
+                  
+                  <button class="button is-medium" onclick="modalActivate(3)">Cola</button>
                 </div>
               </div>
             </article>
-          </div>
         </div>
+        
         <div class="tile is-parent">
-            <article class="tile is-child notification is-success">
+            <article class="tile is-child notification has-background-white-ter">
               <div class="content">
                 <p class="title">Meat</p>
                 <p class="subtitle">With even more content</p>
                 <div class="content">
                   <!-- Content -->
+                  <div class="modal" id="4">
+                    <div class="modal-background"></div>
+                    <div class="modal-content">
+                      <!-- Any other Bulma elements you want -->
+                    </div>
+                    <button class="modal-close is-large" aria-label="close" onclick="modalDeactivate(4)"></button>
+                  </div>
+        
+        
+        
+                  
+                  <button class="button is-medium" onclick="modalActivate(4)">Beef</button>
                 </div>
               </div>
             </article>
         </div>
-        </div>
+
         <div class="tile is-parent">
-            <article class="tile is-child notification is-success">
+            <article class="tile is-child notification has-background-white-ter">
               <div class="content">
-                <p class="title">Alcohol</p>
+                <p class="title">Dairy</p>
                 <p class="subtitle">With even more content</p>
                 <div class="content">
                   <!-- Content -->
+                  <div class="modal" id="5">
+                    <div class="modal-background"></div>
+                    <div class="modal-content">
+                      <!-- Any other Bulma elements you want -->
+                    </div>
+                    <button class="modal-close is-large" aria-label="close" onclick="modalDeactivate(5)"></button>
+                  </div>
+        
+        
+        
+                  
+                  <button class="button is-medium" onclick="modalActivate(5)">Milk</button>
                 </div>
               </div>
             </article>
-          </div>
         </div>
+
         <div class="tile is-parent">
-            <article class="tile is-child notification is-success">
-              <div class="content">
-                <p class="title">Confectionery</p>
-                <p class="subtitle">With even more content</p>
-                <div class="content">
-                  <!-- Content -->
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="tile is-parent">
-            <article class="tile is-child notification is-success">
+            <article class="tile is-child notification has-background-white-ter">
               <div class="content">
                 <p class="title">Frozen Food</p>
                 <p class="subtitle">With even more content</p>
                 <div class="content">
                   <!-- Content -->
+                  <div class="modal" id="6">
+                    <div class="modal-background"></div>
+                    <div class="modal-content">
+                      <!-- Any other Bulma elements you want -->
+                    </div>
+                    <button class="modal-close is-large" aria-label="close" onclick="modalDeactivate(6)"></button>
+                  </div>
+        
+        
+        
+                  
+                  <button class="button is-medium" onclick="modalActivate(6)">Chicken Strips</button>
                 </div>
               </div>
             </article>
-          </div>
+          /div>
         </div>
+
         <div class="tile is-parent">
-            <article class="tile is-child notification is-success">
+            <article class="tile is-child notification has-background-white-ter">
               <div class="content">
                 <p class="title">Fresh Food</p>
                 <p class="subtitle">With even more content</p>
                 <div class="content">
                   <!-- Content -->
+                  <div class="modal" id="7">
+                    <div class="modal-background"></div>
+                    <div class="modal-content">
+                      <!-- Any other Bulma elements you want -->
+                    </div>
+                    <button class="modal-close is-large" aria-label="close" onclick="modalDeactivate(7)"></button>
+                  </div>
+        
+        
+        
+                  
+                  <button class="button is-medium" onclick="modalActivate(7)">Sushi</button>
                 </div>
               </div>
             </article>
-          </div>
         </div>
+
         <div class="tile is-parent">
-            <article class="tile is-child notification is-success">
+            <article class="tile is-child notification has-background-white-ter">
               <div class="content">
                 <p class="title">Bakery</p>
                 <p class="subtitle">With even more content</p>
                 <div class="content">
                   <!-- Content -->
+                  <div class="modal" id="8">
+                    <div class="modal-background"></div>
+                    <div class="modal-content">
+                      <!-- Any other Bulma elements you want -->
+                    </div>
+                    <button class="modal-close is-large" aria-label="close" onclick="modalDeactivate(8)"></button>
+                  </div>
+        
+        
+        
+                  
+                  <button class="button is-medium" onclick="modalActivate(8)">Loaf</button>
                 </div>
               </div>
             </article>
-          </div>
         </div>
+
 
         
         </section>
