@@ -7,3 +7,7 @@ function modalDeactivate(modalid) {
     const modal = document.getElementById(modalid);
     modal.classList.remove('is-active');
 }
+
+function addtocart() {
+    alert("Item Added to Cart!");
+}
